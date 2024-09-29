@@ -5,15 +5,16 @@ public class QueueStackTester {
     {
         Queue<T> w = q;
 
-        int k = 1 ; 
+        int r = 1 ; 
         while(q.length()!=0){
-            if(k%2!=0){
+            if(r%2!=0){
                 oq.enqueue(w.serve());
             }
-            else if (k%2==0) {
+            else if (r%2==0) {
                 eq.enqueue(w.serve());
+                
             }
-            k++;
+            r++;
         }
 
         // Write the recursive static method split that splits a queue of n elements into two
